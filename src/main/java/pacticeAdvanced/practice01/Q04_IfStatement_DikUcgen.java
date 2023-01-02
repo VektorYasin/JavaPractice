@@ -8,22 +8,22 @@ public class Q04_IfStatement_DikUcgen {
         /*
         a2+b2=c2
          */
-        Scanner input=new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("1.kenarı gir");
-        int birinciKenar=input.nextInt();
+        int birinciKenar = input.nextInt();
         System.out.println("2.kenarı gir");
-        int ikinciKenar=input.nextInt();
+        int ikinciKenar = input.nextInt();
         System.out.println("3.kenarı gir");
-        int ucuncuKenar=input.nextInt();
+        int ucuncuKenar = input.nextInt();
 
-        if(birinciKenar*birinciKenar+ikinciKenar*ikinciKenar==ucuncuKenar*ucuncuKenar){
+        if (birinciKenar * birinciKenar + ikinciKenar * ikinciKenar == ucuncuKenar * ucuncuKenar) {
             System.out.println("bu bir dik ucgendir.");
 
-        }else if (birinciKenar*birinciKenar+ucuncuKenar*ucuncuKenar==ikinciKenar*ikinciKenar){
+        } else if (birinciKenar * birinciKenar + ucuncuKenar * ucuncuKenar == ikinciKenar * ikinciKenar) {
             System.out.println("bu bir dik ucgendir.");
-        }else if (ikinciKenar*ikinciKenar+ucuncuKenar*ucuncuKenar==birinciKenar*birinciKenar){
+        } else if (ikinciKenar * ikinciKenar + ucuncuKenar * ucuncuKenar == birinciKenar * birinciKenar) {
             System.out.println("bu bir dik ucgendir.");
-        }else {
+        } else {
             System.out.println("bu bir dik ucgen değildir.");
 
         }

@@ -38,7 +38,7 @@ public class Q05_DoWhile_TahminOyunu {
                 System.out.println("hakkınız bitti");
                 break;
             }
-            System.out.println(10-sayac + " hakkınız kaldı");
+            System.out.println(10 - sayac + " hakkınız kaldı");
 
         } while (sayi != rastgelesayi);
     }

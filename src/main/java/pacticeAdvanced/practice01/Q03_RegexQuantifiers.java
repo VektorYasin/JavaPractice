@@ -3,7 +3,7 @@ package pacticeAdvanced.practice01;
 public class Q03_RegexQuantifiers {
     public static void main(String[] args) {
         //bir string değerin belirli sayıda bir karakter içerip belirli bir karakter ile bitip bitmediğini kontrol edelim
-        String str="!s";
+        String str = "!s";
         System.out.println(str.matches(".."));//iki karakter olup olmadıgını kontrol eder
         System.out.println(str.matches(".s"));//ture --herhangi bir karakter ile başlayıp  s harfi ile bittiğini gösterir
         //matches() methodu regex ile çalışıp String değerin regex ile karşılaştırmasını yapar.
@@ -48,12 +48,6 @@ public class Q03_RegexQuantifiers {
         System.out.println("1?.!12345678".matches("[1][\\p{Punct}]{3}[0-9]{8}"));
 
         System.out.println("1?12345678".matches("[1]{1}[\\p{Punct}]{1}[0-9]{8}"));
-
-
-
-
-
-
 
 
     }

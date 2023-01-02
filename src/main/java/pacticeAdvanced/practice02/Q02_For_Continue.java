@@ -10,21 +10,21 @@ public class Q02_For_Continue {
      */
 
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        int toplam=0;
+        int toplam = 0;
 
-        for(int i=0; i<5;i++){
+        for (int i = 0; i < 5; i++) {
             System.out.println("bir sayı giriniz..:");
-            int sayi=input.nextInt();
+            int sayi = input.nextInt();
 
-            if(sayi>5 && sayi<10){
+            if (sayi > 5 && sayi < 10) {
                 System.out.println("girdiginiz sayı 5 ile 10 arasında oldugundan işleme alınmamıştır");
                 continue;
             }
-            toplam +=sayi;
+            toplam += sayi;
 
         }
-        System.out.println("toplam= "+ toplam);
+        System.out.println("toplam= " + toplam);
     }
 }

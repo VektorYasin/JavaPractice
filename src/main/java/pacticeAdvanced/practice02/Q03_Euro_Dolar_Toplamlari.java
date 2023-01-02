@@ -11,23 +11,23 @@ public class Q03_Euro_Dolar_Toplamlari {
      */
 
     public static void main(String[] args) {
-        String str= "$1 $12 €34 €56 $45 €78";
+        String str = "$1 $12 €34 €56 $45 €78";
 
-        String arr [] = str.split(" ");  //str'ı al, " " dan split yap ve arr'a ata.
+        String arr[] = str.split(" ");  //str'ı al, " " dan split yap ve arr'a ata.
         System.out.println(Arrays.toString(arr)); //[$1, $12, €34, €56, $45, €78]
 
-        int dolarToplami=0;
-        int euroToplami=0;
+        int dolarToplami = 0;
+        int euroToplami = 0;
 
-        for(String w : arr){
-            if(w.contains("$")){
-                dolarToplami += parseInt(w.replace("$",""));
-            }else{
+        for (String w : arr) {
+            if (w.contains("$")) {
+                dolarToplami += parseInt(w.replace("$", ""));
+            } else {
                 euroToplami += parseInt(w.replace("€", ""));
             }
         }
-        System.out.println("dolar toplamı =" +dolarToplami);
-        System.out.println("euro toplamı =" +euroToplami);
-        }
+        System.out.println("dolar toplamı =" + dolarToplami);
+        System.out.println("euro toplamı =" + euroToplami);
     }
+}
 

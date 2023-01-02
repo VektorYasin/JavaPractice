@@ -22,22 +22,21 @@ public class Q05_StrinBuilderPalindrome {
 //            System.out.println("palindrome değil");
 
 
-        String str="nazan1";
+        String str = "nazan1";
 
-        StringBuilder stb=new StringBuilder(str);
+        StringBuilder stb = new StringBuilder(str);
 
-        String stbReverse= stb.reverse().toString();//string builder objesini stringe çevirip String türünde stsbReverse atadık
+        String stbReverse = stb.reverse().toString();//string builder objesini stringe çevirip String türünde stsbReverse atadık
         System.out.println(stb);
 
-        if(str.equals(stbReverse)){
+        if (str.equals(stbReverse)) {
             System.out.println("palindrome");
-        }else
+        } else
             System.out.println("palindrome değil");
-        }
-
-
-
     }
+
+
+}
 
 
 

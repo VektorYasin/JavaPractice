@@ -9,24 +9,24 @@ public class Q04_DoWhile_TopunSicramasi {
         scanner ile yüksekliği al
         her sıcramada 3/4 sicrama azalıyor 1 m altında duruyor
          */
-        Scanner input= new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("bırakılan yüksekliğ gir");
 
-        double yukseklik=input.nextDouble();
+        double yukseklik = input.nextDouble();
 
-        double toplamYol=0;
-        int vurmaSayisi=0;
+        double toplamYol = 0;
+        int vurmaSayisi = 0;
 
-        do{
+        do {
             vurmaSayisi++;
             toplamYol += yukseklik;
-            yukseklik = yukseklik*0.75;
+            yukseklik = yukseklik * 0.75;
             toplamYol += yukseklik;
 
-        }while (yukseklik>1);
+        } while (yukseklik > 1);
 
-        System.out.println("yere vurma sayısı "+ vurmaSayisi);
-        System.out.println("toplam alınan yol "+ toplamYol);
+        System.out.println("yere vurma sayısı " + vurmaSayisi);
+        System.out.println("toplam alınan yol " + toplamYol);
 
 
     }
